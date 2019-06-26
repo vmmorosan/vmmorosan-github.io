@@ -1,0 +1,39 @@
+body{
+	margin: 0px;
+}
+
+
+
+/*this is how to use and style flexbox*/
+.container{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+h1{
+	font-family: 'Indie Flower', cursive;
+	font-size: 3em;
+	border-bottom: 1px solid gray;
+	border-right: 1px solid gray;
+	width: 500px;
+	text-align: center;
+/*this is how make sure new properties of css 3 work with all browsers*/
+	-moz-box-shadow: 3px 3px 2px #88888888;
+	-ms-box-shadow: 3px 3px 2px #88888888;
+	-webkit-box-shadow: 3px 3px 2px #88888888;
+	-o-box-shadow: 3px 3px 2px #88888888;
+	box-shadow: 3px 3px 2px #88888888;
+	margin-top: 10px;
+}
+
+img{
+	width: 450px;
+	height: 300px;
+	margin: 10px;
+	transition: all 1s; /*want all properties of this image to transition over 1sec*/
+}
+
+img:hover{
+	transform: scale(1.05); /* scale up 5%*/
+}
